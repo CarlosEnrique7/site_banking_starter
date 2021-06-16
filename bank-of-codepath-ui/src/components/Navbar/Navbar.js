@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom"
-import FilterInput from "../FilterInput/FilterInput"
-import codepath from "../../assets/codepath.svg"
-import avatar from "../../assets/avatar.png"
-import "./Navbar.css"
+import { Link } from "react-router-dom";
+import FilterInput from "../FilterInput/FilterInput";
+import codepath from "../../assets/codepath.svg";
+import avatar from "../../assets/avatar.png";
+import "./Navbar.css";
 
 export default function Navbar() {
   return (
@@ -29,5 +29,5 @@ export default function Navbar() {
         </div>
       </div>
     </nav>
-  )
+  );
 }

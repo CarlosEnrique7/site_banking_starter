@@ -1,15 +1,15 @@
-import { formatAmount, formatDate } from "../../utils/format"
-import "./TransactionDetail.css"
+import { formatAmount, formatDate } from "../../utils/format";
+import "./TransactionDetail.css";
 
 export default function TransactionDetail() {
-  const transactionId = null // replace this
-  const transaction = {} // replace this
-  const isLoading = false // replace this
-  const error = false // replace this
+  const transactionId = null; // replace this
+  const transaction = {}; // replace this
+  const isLoading = false; // replace this
+  const error = false; // replace this
 
   const renderTransactionContent = () => {
-    if (isLoading) return <h1>Loading...</h1>
-    if (error) return <p className="description">No transaction found</p>
+    if (isLoading) return <h1>Loading...</h1>;
+    if (error) return <p className="description">No transaction found</p>;
 
     return (
       <>
@@ -19,8 +19,8 @@ export default function TransactionDetail() {
           <p className="date">{formatDate(transaction?.postedAt)}</p>
         </div>
       </>
-    )
-  }
+    );
+  };
 
   return (
     <div className="TransactionDetail">
@@ -33,5 +33,5 @@ export default function TransactionDetail() {
         {renderTransactionContent()}
       </div>
     </div>
-  )
+  );
 }
